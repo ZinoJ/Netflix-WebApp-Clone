@@ -1,0 +1,232 @@
+/* .fullLoginScreen {
+   background-color: black;
+} */
+
+
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/5fd505fa-f425-4a18-b3cc-00dd2638f541/fef93e0b-0e0a-481c-82e7-c7f65b2ddb5d/NG-en-20220704-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+
+.loginScreen__body {
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.loginScreen__body__bottom {
+   text-align: center;
+   background-color: black;
+   padding: 2rem 20px;
+   color: #fff;
+   margin: auto;
+}
+
+.loginScreen__body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+
+.loginScreen__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0 rgba(0, 0, 0, 0) 60% rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen__logo {
+  /* position: fixed;
+   left: 0; */
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.loginScreen__button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.loginScreen__input {
+  margin: 20px;
+}
+
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+
+.loginScreen__getStarted {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.first {
+  background-color: black;
+  color: whitesmoke;
+  padding: 2rem 8rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 8px solid #333;
+}
+.firstLeft,
+.firstRight {
+  flex: 0.5;
+}
+
+.h1tag {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.ptag {
+  font-size: 1.8rem;
+}
+
+.image {
+  width: 450px;
+}
+
+@media screen and (max-width: 1256px) {
+  .h1tag {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .h1tag {
+    font-size: 2.3rem;
+  }
+
+  .first {
+    padding-inline: 6rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .first {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .h1tag {
+    font-size: 2rem;
+  }
+  .ptag {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* .loginScreen__body {
+    top: 20%;
+  } */
+}
+
+.ptag {
+  font-size: 1.5rem;
+}
+
+.first { 
+   padding-inline: 3rem;
+}
+
+
+
+@media screen and (max-width: 650px) {
+   .loginScreen__body {
+      top: 20%;
+   }
+   .loginScreen__body > h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+  
+    .loginScreen__body > h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+  
+    .loginScreen__body > h3 {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+
+   .loginScreen__input > form{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.2rem;
+   }
+
+   /* .loginScreen__getStarted {
+      width: 100%;
+   } */
+
+   .loginScreen__input > form > input {
+      width: 96.5%;
+   }
+
+  .image {
+   width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+   .h1tag {
+      font-size: 1.6rem;
+    }
+    .ptag {
+      font-size: 1.2rem;
+    }
+
+    .image {
+      width: 350px;
+     }
+
+}
